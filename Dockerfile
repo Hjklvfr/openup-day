@@ -16,6 +16,4 @@ RUN poetry config virtualenvs.create false && poetry install --no-dev --no-inter
 
 COPY . /app
 
-
-
-
+RUN python manage.py migrate
