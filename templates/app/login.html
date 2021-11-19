@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login form</title>
+</head>
+<body>
+<form action="/" method="post">
+    {% csrf_token %}
+    <label>
+        Enter your username:
+        <input type="text" name="username"/>
+    </label>
+    <label>
+        Enter room name:
+        <input type="text" name="room_name"/>
+    </label>
+    <br/>
+    <br/>
+    <input type="submit" name="submit" value="login"/>
+</form>
+</body>
+</html>
